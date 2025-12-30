@@ -16,6 +16,7 @@ model User {
   passwordHash  String?
   accounts      Account[]
   sessions      Session[]
+  onboardingCompleted Boolean @default(false)
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 }

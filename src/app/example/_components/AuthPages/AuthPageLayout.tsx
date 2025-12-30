@@ -2,6 +2,7 @@ import React from "react";
 import GridShape from "../../../../components/common/GridShape";
 import Link from "next/link";
 import ThemeTogglerTwo from "../../../../components/common/ThemeTogglerTwo";
+import LocaleFlagSwitcher from "../../../../components/i18n/LocaleFlagSwitcher";
 
 export default function AuthLayout({
   children,
@@ -17,7 +18,7 @@ export default function AuthLayout({
             {/* <!-- ===== Common Grid Shape Start ===== --> */}
             <GridShape />
             <div className="flex flex-col items-center max-w-xs">
-              <Link href="/example" className="block mb-4">
+              <Link href="/dashboard" className="block mb-4">
                 <img
                   width={231}
                   height={48}
@@ -26,12 +27,13 @@ export default function AuthLayout({
                 />
               </Link>
               <p className="text-center text-gray-400 dark:text-white/60">
-                Free and Open-Source Tailwind CSS Admin Dashboard Template
+                Life Consultant helps you build routines that actually fit.
               </p>
             </div>
           </div>
         </div>
-        <div className="fixed z-50 hidden bottom-6 right-6 sm:block">
+        <div className="fixed z-50 hidden bottom-6 right-6 sm:flex sm:items-center sm:gap-3">
+          <LocaleFlagSwitcher />
           <ThemeTogglerTwo />
         </div>
       </div>

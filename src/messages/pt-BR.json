@@ -1,0 +1,75 @@
+{
+  "common": {
+    "or": "Ou"
+  },
+  "auth": {
+    "backToDashboard": "Voltar para o dashboard",
+    "signIn": {
+      "title": "Entrar",
+      "subtitle": "Informe seu email e senha para entrar!",
+      "googleButton": "Entrar com Google",
+      "emailLabel": "Email",
+      "emailPlaceholder": "info@gmail.com",
+      "passwordLabel": "Senha",
+      "passwordPlaceholder": "Digite sua senha",
+      "keepLoggedIn": "Manter conectado",
+      "forgotPassword": "Esqueceu a senha?",
+      "submit": "Entrar",
+      "submitLoading": "Entrando...",
+      "noAccount": "Ainda não tem uma conta?",
+      "signUpLink": "Criar conta",
+      "metaTitle": "Entrar | Life Consultant",
+      "metaDescription": "Acesse sua conta no Life Consultant.",
+      "errors": {
+        "emailRequired": "O email é obrigatório.",
+        "passwordRequired": "A senha é obrigatória.",
+        "emailInvalid": "Informe um email válido.",
+        "invalidCredentials": "Email ou senha inválidos.",
+        "session": "Não foi possível carregar sua sessão.",
+        "generic": "Não foi possível entrar."
+      }
+    },
+    "signUp": {
+      "title": "Criar conta",
+      "subtitle": "Informe seus dados para criar sua conta.",
+      "googleButton": "Cadastrar com Google",
+      "firstNameLabel": "Nome",
+      "firstNamePlaceholder": "Digite seu nome",
+      "lastNameLabel": "Sobrenome",
+      "lastNamePlaceholder": "Digite seu sobrenome",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Digite seu email",
+      "passwordLabel": "Senha",
+      "passwordPlaceholder": "Digite sua senha",
+      "confirmPasswordLabel": "Confirmar senha",
+      "confirmPasswordPlaceholder": "Confirme sua senha",
+      "termsNotice": "Ao criar uma conta, você concorda com os <terms>Termos e Condições</terms> e nossa <privacy>Política de Privacidade</privacy>",
+      "submit": "Criar conta",
+      "submitLoading": "Criando conta...",
+      "hasAccount": "Já tem uma conta?",
+      "signInLink": "Entrar",
+      "metaTitle": "Criar conta | Life Consultant",
+      "metaDescription": "Crie sua conta no Life Consultant.",
+      "errors": {
+        "firstNameRequired": "O nome é obrigatório.",
+        "lastNameRequired": "O sobrenome é obrigatório.",
+        "emailRequired": "O email é obrigatório.",
+        "emailInvalid": "Informe um email válido.",
+        "passwordRequired": "A senha é obrigatória.",
+        "passwordMin": "A senha deve ter pelo menos {min} caracteres.",
+        "confirmPasswordRequired": "Confirme sua senha.",
+        "confirmPasswordMismatch": "As senhas não conferem.",
+        "termsRequired": "Você precisa aceitar os termos para continuar.",
+        "emailInUse": "Este email já está em uso.",
+        "signInFailed": "Não foi possível entrar com a nova conta.",
+        "generic": "Não foi possível criar sua conta."
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard"
+  },
+  "onboarding": {
+    "title": "Onboarding"
+  }
+}

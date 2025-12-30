@@ -1,0 +1,75 @@
+{
+  "common": {
+    "or": "Or"
+  },
+  "auth": {
+    "backToDashboard": "Back to dashboard",
+    "signIn": {
+      "title": "Sign In",
+      "subtitle": "Enter your email and password to sign in!",
+      "googleButton": "Sign in with Google",
+      "emailLabel": "Email",
+      "emailPlaceholder": "info@gmail.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "keepLoggedIn": "Keep me logged in",
+      "forgotPassword": "Forgot password?",
+      "submit": "Sign in",
+      "submitLoading": "Signing in...",
+      "noAccount": "Don't have an account?",
+      "signUpLink": "Sign Up",
+      "metaTitle": "Sign In | Life Consultant",
+      "metaDescription": "Access your Life Consultant account.",
+      "errors": {
+        "emailRequired": "Email is required.",
+        "passwordRequired": "Password is required.",
+        "emailInvalid": "Enter a valid email address.",
+        "invalidCredentials": "Invalid email or password.",
+        "session": "Unable to load your session.",
+        "generic": "Unable to sign in."
+      }
+    },
+    "signUp": {
+      "title": "Sign Up",
+      "subtitle": "Enter your details to create your account.",
+      "googleButton": "Sign up with Google",
+      "firstNameLabel": "First Name",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastNameLabel": "Last Name",
+      "lastNamePlaceholder": "Enter your last name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter your email",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "confirmPasswordLabel": "Confirm Password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "termsNotice": "By creating an account means you agree to the <terms>Terms and Conditions</terms>, and our <privacy>Privacy Policy</privacy>",
+      "submit": "Sign Up",
+      "submitLoading": "Creating account...",
+      "hasAccount": "Already have an account?",
+      "signInLink": "Sign In",
+      "metaTitle": "Sign Up | Life Consultant",
+      "metaDescription": "Create your Life Consultant account.",
+      "errors": {
+        "firstNameRequired": "First name is required.",
+        "lastNameRequired": "Last name is required.",
+        "emailRequired": "Email is required.",
+        "emailInvalid": "Enter a valid email address.",
+        "passwordRequired": "Password is required.",
+        "passwordMin": "Password must be at least {min} characters.",
+        "confirmPasswordRequired": "Please confirm your password.",
+        "confirmPasswordMismatch": "Passwords do not match.",
+        "termsRequired": "You must accept the terms to continue.",
+        "emailInUse": "Email is already in use.",
+        "signInFailed": "Unable to sign in with the new account.",
+        "generic": "Unable to create your account."
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard"
+  },
+  "onboarding": {
+    "title": "Onboarding"
+  }
+}
