@@ -1,8 +1,9 @@
-import Link from "next/link";
+import NextLink from "next/link";
 
 interface LinkProps {
   to: string; // Use 'to' for internal navigation
-  text: string;
+  text?: string;
+  children?: React.ReactNode;
   variant?:
     | "primary"
     | "secondary"
@@ -19,6 +20,7 @@ interface LinkProps {
 const Link: React.FC<LinkProps> = ({
   to,
   text,
+  children,
   variant = "gray",
   underline = false,
   opacity,
@@ -54,12 +56,12 @@ const Link: React.FC<LinkProps> = ({
   const underlineClass = underline ? "underline" : "";
 
   return (
-    <Link
+    <NextLink
       href={to}
       className={`${baseStyles} ${variants[variant]} ${opacityClass} ${hoverClass} ${underlineClass}`}
     >
-      {text}
-    </Link>
+      {children ?? text}
+    </NextLink>
   );
 };
 

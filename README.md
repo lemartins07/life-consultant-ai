@@ -198,6 +198,60 @@ O MVP foca **exclusivamente** em:
 
 ---
 
+## 🧱 Infra e Setup Local
+
+### ✅ Pré-requisitos
+
+* Docker + Docker Compose
+* Node.js 18+
+
+### 🚀 Subindo o banco (Postgres)
+
+1. Copie o `.env.example` para `.env` e ajuste se necessário.
+2. Suba o container:
+
+```bash
+docker compose up -d
+```
+
+### 🧬 Prisma (migrations)
+
+```bash
+npm run db:migrate
+```
+
+### ▶️ Rodando o app
+
+```bash
+npm run dev
+```
+
+### 🔐 Auth (registro básico)
+
+* Endpoint para criar usuário:
+
+```
+POST /api/auth/register
+```
+
+Body esperado:
+
+```json
+{
+  "email": "user@email.com",
+  "password": "minha-senha",
+  "name": "Meu Nome"
+}
+```
+
+### 📌 Variáveis de ambiente (Vercel)
+
+Configure no dashboard:
+
+* `DATABASE_URL`
+* `NEXTAUTH_SECRET`
+* `NEXTAUTH_URL` (ex: `https://sua-url.vercel.app`)
+
 ## 🗂️ Backlog do MVP (Épicos, User Stories e Critérios de Aceite)
 
 ### 1️⃣ 🧍 Onboarding & Rotina
@@ -400,4 +454,3 @@ Critérios de aceite:
 * 🛠️ **Tarefas constroem o caminho**
 * ⚡ **Prioridade define a velocidade**
 * 🌱 **A vida real é o parâmetro, não o ideal**
-

@@ -1,7 +1,19 @@
 "use client";
 
-import PageComponent from "../../../pages/example/AuthPages/SignIn";
+import PageMeta from "../../../components/common/PageMeta";
+import AuthLayout from "../_components/AuthPages/AuthPageLayout";
+import SignInForm from "../../../components/auth/SignInForm";
 
-export default function Page() {
-  return <PageComponent />;
+export default function SignIn() {
+  return (
+    <>
+      <PageMeta
+        title="React.js SignIn Dashboard | TailAdmin - Next.js Admin Dashboard Template"
+        description="This is React.js SignIn Tables Dashboard page for TailAdmin - React.js Tailwind CSS Admin Dashboard Template"
+      />
+      <AuthLayout>
+        <SignInForm />
+      </AuthLayout>
+    </>
+  );
 }

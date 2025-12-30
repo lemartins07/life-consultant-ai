@@ -1,7 +1,18 @@
 "use client";
 
-import PageComponent from "../../../../pages/example/UiElements/Ribbons";
+import PageBreadcrumb from "../../../../components/common/PageBreadCrumb";
+import RibbonExample from "../../../../components/ui/ribbons/index";
+import PageMeta from "../../../../components/common/PageMeta";
 
-export default function Page() {
-  return <PageComponent />;
+export default function Ribbons() {
+  return (
+    <div>
+      <PageMeta
+        title="React.js List Ribbons | TailAdmin - React.js Admin Dashboard Template"
+        description="This is React.js Ribbons page for TailAdmin - React.js Tailwind CSS Admin Dashboard Template"
+      />
+      <PageBreadcrumb pageTitle="Ribbons" />
+      <RibbonExample />
+    </div>
+  );
 }
