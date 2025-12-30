@@ -198,6 +198,200 @@ O MVP foca **exclusivamente** em:
 
 ---
 
+## 🗂️ Backlog do MVP (Épicos, User Stories e Critérios de Aceite)
+
+### 1️⃣ 🧍 Onboarding & Rotina
+
+**US1 — Cadastro de rotina mínima**  
+Como usuário, quero informar minha rotina e disponibilidade para que o consultor calcule minha capacidade real.
+
+Critérios de aceite:
+* Formulário com horários de trabalho, tempo livre e sono/energia média.
+* Validação de campos obrigatórios e confirmação de salvamento.
+* Dados ficam editáveis após o onboarding.
+
+**US2 — Tipos de dia e níveis de energia**  
+Como usuário, quero definir tipos de dia (home office, escritório, baixa/alta energia) para que tarefas respeitem meu contexto.
+
+Critérios de aceite:
+* Criar/editar tipos de dia com um nível de energia associado.
+* Deve existir ao menos um tipo de dia ativo.
+* Tipos de dia são usados no planejamento semanal.
+
+**US3 — Capacidade semanal real**  
+Como usuário, quero ver minha capacidade semanal estimada para entender o quanto consigo executar.
+
+Critérios de aceite:
+* Exibe horas/slots disponíveis por semana.
+* Mostra a origem do cálculo (rotina + energia).
+* Recalcula ao alterar rotina.
+
+---
+
+### 2️⃣ 🎯 Áreas da Vida & Objetivos
+
+**US1 — CRUD de áreas da vida**  
+Como usuário, quero criar e editar áreas (finanças, saúde, carreira) para organizar meus objetivos.
+
+Critérios de aceite:
+* Criar/editar/excluir áreas.
+* Listagem de áreas com contagem de objetivos.
+* Ao excluir, solicita confirmação.
+
+**US2 — CRUD de objetivos com prioridade e foco**  
+Como usuário, quero criar objetivos com horizonte e foco para definir o que é principal agora.
+
+Critérios de aceite:
+* Objetivo exige: título, área, horizonte (curto/médio/longo), prioridade e foco.
+* Permite pausar/reativar objetivos.
+* Lista objetivos por área e status.
+
+**US3 — Múltiplos objetivos por área**  
+Como usuário, quero ter vários objetivos na mesma área para refletir minha vida real.
+
+Critérios de aceite:
+* Suporta múltiplos objetivos por área.
+* Identifica foco principal/ secundário/ em espera.
+* Não limita a quantidade de objetivos cadastrados.
+
+---
+
+### 3️⃣ 🧠 Consultor Inteligente (Viabilidade & Conflitos)
+
+**US1 — Avaliação de viabilidade**  
+Como usuário, quero saber se meu objetivo é viável para decidir o que fazer agora.
+
+Critérios de aceite:
+* Classifica como viável/parcialmente viável/inviável.
+* Explica o motivo com base em tempo, energia e recursos.
+* Registra o resultado junto ao objetivo.
+
+**US2 — Detecção de conflitos**  
+Como usuário, quero ser avisado quando objetivos competem entre si.
+
+Critérios de aceite:
+* Detecta conflitos por tempo ou energia.
+* Mostra quais objetivos estão em choque.
+* Direciona para decisão do usuário.
+
+**US3 — Decisão explícita do usuário**  
+Como usuário, quero decidir o que priorizar quando há conflito.
+
+Critérios de aceite:
+* Opções: repriorizar, adiar ou reduzir escopo.
+* Decisão é registrada no histórico.
+* O plano é atualizado após a escolha.
+
+---
+
+### 4️⃣ 🛣️ Estratégias
+
+**US1 — Geração de estratégias alternativas**  
+Como usuário, quero ver caminhos alternativos para objetivos difíceis.
+
+Critérios de aceite:
+* Gera pelo menos duas estratégias por objetivo.
+* Cada estratégia exibe impacto, esforço e risco.
+* Estratégias ficam vinculadas ao objetivo.
+
+**US2 — Seleção de estratégia ativa**  
+Como usuário, quero escolher a estratégia que vou seguir.
+
+Critérios de aceite:
+* Apenas uma estratégia fica ativa por objetivo.
+* A seleção é salva e visível no objetivo.
+* A estratégia ativa orienta a geração de tarefas.
+
+---
+
+### 5️⃣ 🛠️ Gerador de Tarefas SMART
+
+**US1 — Geração de tarefas SMART**  
+Como usuário, quero tarefas pequenas e executáveis a partir da estratégia escolhida.
+
+Critérios de aceite:
+* Cada tarefa tem descrição clara, duração e nível de energia.
+* Tarefas estão alinhadas à estratégia ativa.
+* Classificação por tipo: objetivo, rotina, manutenção.
+
+**US2 — Edição manual de tarefas**  
+Como usuário, quero ajustar tarefas para refletir minha realidade.
+
+Critérios de aceite:
+* Editar descrição, duração, energia e tipo.
+* Excluir tarefas geradas.
+* Mudanças são persistidas.
+
+---
+
+### 6️⃣ 📊 Priorização com Matriz de Eisenhower
+
+**US1 — Classificação semanal automática**  
+Como usuário, quero que as tarefas sejam classificadas na matriz para organizar minha semana.
+
+Critérios de aceite:
+* Classifica tarefas em 4 quadrantes.
+* Não remove tarefas da lista.
+* Exibe quantidade por quadrante.
+
+**US2 — Ajuste manual de quadrantes**  
+Como usuário, quero ajustar a classificação quando fizer sentido.
+
+Critérios de aceite:
+* Permite mover tarefa entre quadrantes.
+* Mantém histórico de alterações.
+* Alterações impactam o planejamento semanal.
+
+---
+
+### 7️⃣ ⚠️ Conflitos & Decisão do Usuário
+
+**US1 — Registro de conflitos**  
+Como usuário, quero ter um histórico de conflitos e decisões.
+
+Critérios de aceite:
+* Cada conflito registra objetivos, motivo e data.
+* Decisões ficam associadas ao conflito.
+* Lista consultável por período.
+
+**US2 — Diálogo de resolução**  
+Como usuário, quero ser guiado para resolver conflitos sem perder contexto.
+
+Critérios de aceite:
+* Mensagem clara explicando o conflito.
+* Bloqueia continuidade até decisão.
+* Salva a decisão escolhida.
+
+---
+
+### 8️⃣ 🔄 Feedback & Aprendizado
+
+**US1 — Planejamento semanal baseado em rotina**  
+Como usuário, quero um plano semanal que respeite meus tipos de dia.
+
+Critérios de aceite:
+* Distribui tarefas conforme tipos de dia e energia.
+* Exibe plano por dia da semana.
+* Permite ajustar manualmente o plano.
+
+**US2 — Check-in semanal**  
+Como usuário, quero registrar o que consegui executar para melhorar o plano.
+
+Critérios de aceite:
+* Check-in com tarefas concluídas e dificuldades.
+* Atualiza taxa de conclusão semanal.
+* Solicita feedback qualitativo curto.
+
+**US3 — Ajuste de capacidade e reavaliação**  
+Como usuário, quero que o sistema aprenda com minha execução real.
+
+Critérios de aceite:
+* Atualiza capacidade estimada com base no check-in.
+* Reavalia viabilidade de objetivos afetados.
+* Sugere ajustes de estratégia quando necessário.
+
+---
+
 ## 🧠✨ Princípios do Produto
 
 * 🧱 **Realismo acima de motivação**
@@ -206,5 +400,4 @@ O MVP foca **exclusivamente** em:
 * 🛠️ **Tarefas constroem o caminho**
 * ⚡ **Prioridade define a velocidade**
 * 🌱 **A vida real é o parâmetro, não o ideal**
-
 
